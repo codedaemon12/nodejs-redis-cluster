@@ -1,0 +1,35 @@
+> show databases
+Customer  0.000GB
+admin     0.000GB
+config    0.000GB
+local     0.000GB
+> use Customer
+switched to db Customer
+> show collections
+Users
+> show collections
+> db.Users.insert(   {         "first" : "John",         "last": "Doe",         "age": 20,         "address": {             "addr1": "183 bee street",             "State": "Bee state",             "City": "Bee City",             "zip": "Bee Zip"         }     })
+> db.Users.insert({
+...     first : "Jude",
+...     last: "Law",
+...     age: 30,
+...     address: {
+...         addr1: "183 Jude street",
+...         State: "Jude state",
+...         City: "Jude City",
+...         zip: "Jude Zip"
+...     }
+... })
+> db.Users.insert({
+... ...     first : "Jude",
+... ...     last: "Law",
+... ...     age: 30,
+... ...     address: {
+... ...         addr1: "183 Jude street",
+... ...         State: "Jude state",
+... ...         City: "Jude City",
+... ...         zip: "Jude Zip"
+... ...     }
+... ... })
+
+> db.Users.find()
